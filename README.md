@@ -1,3 +1,3 @@
-# Desafios Bora Codar
+# Desafios
 
-<p>Estes desafios foram realizados pela <a href="https://www.rocketseat.com.br/boracodar/desafios-anteriores" target="_blank">Rocketseat</a></p>
+<p>Estes são desafios em geral.</p>
