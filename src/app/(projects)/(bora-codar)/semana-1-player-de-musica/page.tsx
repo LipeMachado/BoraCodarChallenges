@@ -1,10 +1,10 @@
-export const title = "Projeto 1";
-export const description = "Descrição do Projeto 1";
+export const title = "Projeto - 1";
+export const description = "Descrição do Projeto - 1";
 
 const Semana1PlayerDeMusica = () => {
   return (
     <div>
-      player musica
+      Projeto 1
     </div>
   )
 }
