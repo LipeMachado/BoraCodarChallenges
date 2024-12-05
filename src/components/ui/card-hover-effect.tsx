@@ -21,14 +21,14 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10",
+        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full py-10",
         className
       )}
     >
       {items.map((item, idx) => (
         <Link
           href={item.link}
-          key={item.title}
+          key={`${item.link}-${idx}`}
           className="relative group block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -88,7 +88,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-primary font-bold tracking-wide", className)}>
+    <h4 className={cn("text-primary font-bold break-words", className)}>
       {children}
     </h4>
   );
