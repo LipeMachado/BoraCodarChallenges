@@ -15,8 +15,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Code Challenge - Bora Codar",
-  description: "Desafios Bora Codar da Rocketseat",
+  title: "Codes Challenges",
+  description: "Desafios de LipeCode",
 };
 
 export default function RootLayout({

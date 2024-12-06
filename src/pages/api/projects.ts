@@ -32,8 +32,8 @@ async function getProjects(directory: string, baseRoute = ""): Promise<Project[]
         const titleMatch = fileContent.match(/export const title = "([^"]+)"/);
         const descriptionMatch = fileContent.match(/export const description = "([^"]+)"/);
 
-        const title = titleMatch ? titleMatch[1] : 'Título não encontrado';
-        const description = descriptionMatch ? descriptionMatch[1] : 'Descrição não disponível';
+        const title = titleMatch ? titleMatch[1] : '';
+        const description = descriptionMatch ? descriptionMatch[1] : '';
 
         // Filtragem das pastas para remover aquelas com parênteses
         let projectLink = baseRoute
@@ -55,8 +55,8 @@ async function getProjects(directory: string, baseRoute = ""): Promise<Project[]
         console.error(`Erro ao carregar o arquivo ${entryPath}:`, error);
         result.push({
           link: `${baseRoute.replace("/(projects)", "")}`,  // Remover a parte "/(projects)"
-          title: 'Erro ao carregar título',
-          description: 'Descrição não disponível',
+          title: '',
+          description: '',
         });
       }
     }
