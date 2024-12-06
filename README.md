@@ -1,3 +1,3 @@
 # Desafios
 
-<p>Estes são desafios em geral.</p>
+<p>Este é um site de desafios que fiz.</p>
